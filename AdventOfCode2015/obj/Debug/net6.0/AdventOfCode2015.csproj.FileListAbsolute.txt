@@ -1,0 +1,16 @@
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\bin\Debug\net6.0\AdventOfCode2015.exe
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\bin\Debug\net6.0\AdventOfCode2015.deps.json
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\bin\Debug\net6.0\AdventOfCode2015.runtimeconfig.json
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\bin\Debug\net6.0\AdventOfCode2015.dll
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\bin\Debug\net6.0\AdventOfCode2015.pdb
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.csproj.AssemblyReference.cache
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.AssemblyInfoInputs.cache
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.AssemblyInfo.cs
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.csproj.CoreCompileInputs.cache
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.dll
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\refint\AdventOfCode2015.dll
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.pdb
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\AdventOfCode2015.genruntimeconfig.cache
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\obj\Debug\net6.0\ref\AdventOfCode2015.dll
+C:\Dev Projects\AdventOfCode2015\AdventOfCode2015\bin\Debug\net6.0\ProblemInputs\Day02Input.txt
