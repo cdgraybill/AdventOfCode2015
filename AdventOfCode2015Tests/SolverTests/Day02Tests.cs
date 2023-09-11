@@ -17,5 +17,14 @@ namespace AdventOfCode2015Tests.SolverTests
 
             Assert.Equal(1598415, answer);
         }
+
+        [Fact]
+        public void Solve_Part02()
+        {
+            var solver = new Day02Solver();
+            var answer = solver.Solve_Part02();
+
+            Assert.Equal(3812909, answer);
+        }
     }
 }
