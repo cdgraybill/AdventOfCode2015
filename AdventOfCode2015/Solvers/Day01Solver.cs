@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventOfCode2015.Solvers
+﻿namespace AdventOfCode2015.Solvers
 {
     public class Day01Solver
     {
