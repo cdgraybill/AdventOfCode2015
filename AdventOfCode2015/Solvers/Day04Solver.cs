@@ -20,8 +20,9 @@ namespace AdventOfCode2015.Solvers
             while (isStillLooking)
             {
                 var computeInput = $"{_problemInput}{number}";
+                var md5 = MD5.Create();
                 byte[] encodedPassword = new UTF8Encoding().GetBytes(computeInput);
-                byte[] hash = ((HashAlgorithm)CryptoConfig.CreateFromName("MD5")).ComputeHash(encodedPassword);
+                byte[] hash = md5.ComputeHash(encodedPassword); 
                 string encoded = BitConverter.ToString(hash)
                     .Replace("-", string.Empty)
                     .ToLower();
@@ -43,8 +44,9 @@ namespace AdventOfCode2015.Solvers
             while (isStillLooking)
             {
                 var computeInput = $"{_problemInput}{number}";
+                var md5 = MD5.Create();
                 byte[] encodedPassword = new UTF8Encoding().GetBytes(computeInput);
-                byte[] hash = ((HashAlgorithm)CryptoConfig.CreateFromName("MD5")).ComputeHash(encodedPassword);
+                byte[] hash = md5.ComputeHash(encodedPassword);
                 string encoded = BitConverter.ToString(hash)
                     .Replace("-", string.Empty)
                     .ToLower();

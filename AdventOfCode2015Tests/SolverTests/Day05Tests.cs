@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2015Tests.SolverTests
 {
-    public class Day04Tests
+    public class Day05Tests
     {
         [Fact]
         public void Solve_Part01()
         {
-            var solver = new Day04Solver();
+            var solver = new Day05Solver();
             var answer = solver.Solve_Part01();
 
-            Assert.Equal(282749, answer);
+            Assert.Equal(236, answer);
         }
 
         [Fact]
         public void Solve_Part02()
         {
-            var solver = new Day04Solver();
+            var solver = new Day05Solver();
             var answer = solver.Solve_Part02();
 
-            Assert.Equal(9962624, answer);
+            Assert.Equal(51, answer);
         }
     }
 }
