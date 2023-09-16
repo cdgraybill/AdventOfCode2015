@@ -78,15 +78,15 @@ namespace AdventOfCode2015.Solvers
 
         private bool HasRepeatingPairs(string input)
         {
-            for (int i = 1; i < input.Length; i++)
+            for (int i = 0; i < input.Length - 1; i++)
             {
-                var workingPair = $"{input[i - 1]}{input[i]}";
+                var currentPair = $"{input[i]}{input[i + 1]}";
 
-                for (int j = 3 + (i - 1); j < input.Length; j++)
+                for (int j = i + 2; j < input.Length - 1; j++)
                 {
-                    var shiftingPair = $"{input[j - 1]}{input[j]}";
+                    var nextPair = $"{input[j]}{input[j + 1]}";
 
-                    if (workingPair == shiftingPair)
+                    if (currentPair == nextPair)
                         return true;
                 }
             }
