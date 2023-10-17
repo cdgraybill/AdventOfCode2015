@@ -14,7 +14,7 @@ namespace AdventOfCode2015.Solvers
 
             foreach(var line in _problemInput)
             {
-                var action = GetAction(line);
+                var action = GetAction_PartOne(line);
                 var coordinates = GetCoordinates(line);
                 RunInstructions(lights, action, coordinates); 
             }
@@ -27,6 +27,25 @@ namespace AdventOfCode2015.Solvers
                         _numberOfLights++;
                 }
             }
+
+            return _numberOfLights;
+        }
+
+        public int Solve_Part02()
+        {
+            int[,] lights = new int[1000, 1000];
+
+            foreach (var line in _problemInput)
+            {
+                var action = GetAction_PartTwo(line);
+                var coordinates = GetCoordinates(line);
+                RunInstructions_PartTwo(lights, action, coordinates);
+            }
+
+            foreach (var light in lights)
+            {
+                _numberOfLights += light;
+            } 
 
             return _numberOfLights;
         }
@@ -47,7 +66,26 @@ namespace AdventOfCode2015.Solvers
             }
         }
 
-        private string GetAction(string line)
+        private void RunInstructions_PartTwo(int[,] lights, int action, CoordinateSet coordinates)
+        {
+            for (int x = coordinates.FirstCoordinate.X; x <= coordinates.SecondCoordinate.X; x++)
+            {
+                for (int y = coordinates.FirstCoordinate.Y; y <= coordinates.SecondCoordinate.Y; y++)
+                {
+                    if (action == 1)
+                        lights[x, y] += 1;
+                    else if (action == -1)
+                        lights[x, y] += -1;
+                    else
+                        lights[x, y] += 2;
+
+                    if (lights[x, y] < 0)
+                        lights[x, y] = 0;
+                }
+            }
+        }
+
+        private string GetAction_PartOne(string line)
         {
             string action;
             if (line.Contains("on"))
@@ -56,6 +94,19 @@ namespace AdventOfCode2015.Solvers
                 action = "off";
             else
                 action = "toggle";
+
+            return action;
+        }
+
+        private int GetAction_PartTwo(string line)
+        {
+            int action;
+            if (line.Contains("on"))
+                action = 1;
+            else if (line.Contains("off"))
+                action = -1;
+            else
+                action = 2;
 
             return action;
         }

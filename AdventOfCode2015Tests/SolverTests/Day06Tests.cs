@@ -21,10 +21,10 @@ namespace AdventOfCode2015Tests.SolverTests
         [Fact]
         public void Solve_Part02()
         {
-            var solver = new Day05Solver();
+            var solver = new Day06Solver();
             var answer = solver.Solve_Part02();
 
-            Assert.Equal(51, answer);
+            Assert.Equal(15343601, answer);
         }
     }
 }
